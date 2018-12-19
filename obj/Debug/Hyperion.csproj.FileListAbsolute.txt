@@ -1,0 +1,7 @@
+D:\Projects\GameDev\Hyperion - Text Adventure Project\Hyperion\Hyperion\bin\Debug\Hyperion.exe.config
+D:\Projects\GameDev\Hyperion - Text Adventure Project\Hyperion\Hyperion\bin\Debug\Hyperion.exe
+D:\Projects\GameDev\Hyperion - Text Adventure Project\Hyperion\Hyperion\bin\Debug\Hyperion.pdb
+D:\Projects\GameDev\Hyperion - Text Adventure Project\Hyperion\Hyperion\obj\Debug\Hyperion.csprojAssemblyReference.cache
+D:\Projects\GameDev\Hyperion - Text Adventure Project\Hyperion\Hyperion\obj\Debug\Hyperion.csproj.CoreCompileInputs.cache
+D:\Projects\GameDev\Hyperion - Text Adventure Project\Hyperion\Hyperion\obj\Debug\Hyperion.exe
+D:\Projects\GameDev\Hyperion - Text Adventure Project\Hyperion\Hyperion\obj\Debug\Hyperion.pdb
