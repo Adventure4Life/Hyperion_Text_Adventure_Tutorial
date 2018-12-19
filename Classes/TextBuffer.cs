@@ -9,5 +9,11 @@ namespace Hyperion
     static class TextBuffer
     {
         private static string outputBuffer;
+
+        public static void Add(string text)
+        { }
+
+        public static void Display()
+        { }
     }
 }

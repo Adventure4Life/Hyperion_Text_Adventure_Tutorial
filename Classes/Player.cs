@@ -27,5 +27,26 @@ namespace Hyperion
 
 
         #endregion Setters & Getters (properties)
+
+        public static void Move (string direction)
+        { }
+
+        public static void PickUpItem (string itemName)
+        { }
+
+        public static void DropItem(string itemName)
+        { }
+
+        public static void DisplayInventory()
+        { }
+
+
+        public static Items GetInventoryItem(string itemName)
+        { return null; }
+
+        public static Rooms GetCurrentRoom()
+        { return null; }
+
+
     }
 }

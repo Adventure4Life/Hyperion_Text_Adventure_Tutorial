@@ -12,5 +12,16 @@ namespace Hyperion
         private string description { get; set; }
         private List<string> exists { get; set; }
         private List<Items> items {get; set;}
+
+    // Private Methods
+        private string GetItemList()
+        { return " "; }
+
+        private string GetExitList()
+        { return " "; }
+
+        private string GetCords()
+        { return " "; }
+
     }
 }

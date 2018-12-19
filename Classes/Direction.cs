@@ -12,5 +12,11 @@ namespace Hyperion
         public const string South = "south";
         public const string East = "east";
         public const string West = "west";
+
+        public static bool IsValidDirection()
+        {
+            return true;
+        }
+
     }
 }
