@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using Hyperion.Classes;
 
 namespace Hyperion
 {
     class Program
     {
+        public static Boolean quit = false;
+
         static void Main(string[] args)
         {
+            GameManager.ShowTitleScreen();
+            Level.Initialize();
+            GameManager.StartGame();
 
-            Console.WriteLine("This is the start!");
-            Console.ReadKey();
+            while (!quit)
+            {
+                CommandProcessor.ProcessCommand(Console.ReadLine());
+            }
         }
     }
 }

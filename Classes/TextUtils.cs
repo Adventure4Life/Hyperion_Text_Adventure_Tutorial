@@ -2,23 +2,52 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Hyperion
+namespace Hyperion.Classes
 {
-    static class TextUtils
+    class TextUtils
     {
-        public static string ExtractCommand (string line)
+        public static string ExtractCommand(string line)
         {
-            return " ";
+            int index = line.IndexOf(' ');
+            if (index == -1)
+                return line;
+            else
+                return line.Substring(0, index);
         }
 
-        public static string ExtractArguments (string line)
-        { return " "; }
-
-        public static string WordWrap (string text, int BufferWidth)
+        public static string ExtractArgument(string line)
         {
-            return text;
+            int index = line.IndexOf(' ');
+            if (index == -1)
+                return "";
+            else
+                return line.Substring(index + 1, line.Length - index - 1);
+        }
+
+        public static string WordWrap(string text, int bufferWidth)
+        {
+            string result = "";
+            string[] lines = text.Split('\n');
+
+            foreach (string line in lines)
+            {
+                int linelength = 0;
+                string[] words = line.Split(' ');
+
+                foreach (string word in words)
+                {
+                    if (word.Length + linelength >= bufferWidth - 1)
+                    {
+                        result += "\n";
+                        linelength = 0;
+                    }
+                    result += word + " ";
+                    linelength += word.Length + 1;
+                }
+                result += "\n";
+            }
+            return result;
         }
     }
 }

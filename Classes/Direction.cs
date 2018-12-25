@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Hyperion
+namespace Hyperion.Classes
 {
     public struct Direction
     {
@@ -13,10 +12,20 @@ namespace Hyperion
         public const string East = "east";
         public const string West = "west";
 
-        public static bool IsValidDirection()
+        public static bool IsValidDirection(string direction)
         {
-            return true;
+            switch (direction)
+            {
+                case Direction.North:
+                    return true;
+                case Direction.South:
+                    return true;
+                case Direction.West:
+                    return true;
+                case Direction.East:
+                    return true;
+            }
+            return false;
         }
-
     }
 }
